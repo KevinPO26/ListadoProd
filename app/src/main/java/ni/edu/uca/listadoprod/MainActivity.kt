@@ -98,12 +98,13 @@ class MainActivity : AppCompatActivity() {
                 with(binding) {
                     listaProd.removeAt(position)
                     rcvLista.adapter?.notifyItemRemoved(position)
+                    limpiar()
                 }
 
             })
             dialog.setNegativeButton("NO", DialogInterface.OnClickListener { _, _ ->
                 Toast.makeText(this, "Eliminación Cancelada", Toast.LENGTH_SHORT).show()
-
+                limpiar()
             })
             dialog.show()
         } catch (ex: Exception) {
@@ -126,6 +127,7 @@ class MainActivity : AppCompatActivity() {
                 listaProd.set(position, prod)
 
                 rcvLista.adapter?.notifyItemChanged(position)
+                limpiar()
             }
         } catch (ex: Exception) {
             Toast.makeText(

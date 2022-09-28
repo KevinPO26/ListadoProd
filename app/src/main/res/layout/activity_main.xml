@@ -28,6 +28,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:inputType="number"
+        android:singleLine="true"
         android:textAlignment="center"
         android:textColor="#DA1E1E"
         android:textSize="20sp" />
@@ -51,6 +52,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
+        android:singleLine="true"
         android:textColor="#DA1E1E"
         android:textSize="20sp" />
 
@@ -73,6 +75,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
         android:textColor="#DA1E1E"
         android:textSize="20sp" />
 
